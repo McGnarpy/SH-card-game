@@ -27,13 +27,13 @@
                 <CheckBox Name="ckbxAllSeeingEye" IsChecked="False" Click="ckbxAllSeeingEye_Click"/>
             
                 <Label Name="lblNumShownCards" Content="Number of shown table cards" FontWeight="DemiBold" Margin="2"/>
-                <Slider Name="sldrShownCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrShownCards_ValueChanged" Interval="1"/>
+                <Slider Name="sldrShownCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrShownCards_ValueChanged" Interval="1" IsSnapToTickEnabled="True"/>
             
                 <Label Name="lblNumHidenCards" Content="Number of hiden table cards" FontWeight="DemiBold" Margin="2"/>
-                <Slider Name="sldrHidenCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrHidenCards_ValueChanged" Interval="1"/>
+                <Slider Name="sldrHidenCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrHidenCards_ValueChanged" Interval="1" IsSnapToTickEnabled="True"/>
             
                 <Label Name="lblNumMinHandCards" Content="Minimum number of cards on hand to not draw more from drawpile" FontWeight="DemiBold" Margin="2"/>
-                <Slider Name="sldrHandCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrHandCards_ValueChanged" Interval="1"/>
+                <Slider Name="sldrHandCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrHandCards_ValueChanged" Interval="1" IsSnapToTickEnabled="True"/>
 
                 <Label Name="lblSeed" Content="Seed" FontWeight="DemiBold"/>
                 <TextBox Name="txbSeed" Width="200" HorizontalAlignment="Left" TextChanged="txbSeed_TextChanged"/>
