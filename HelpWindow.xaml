@@ -1,0 +1,79 @@
+﻿<Window x:Class="Assignment7.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment7"
+        mc:Ignorable="d"
+        Title="Help; description and rules" Height="450" Width="800">
+    <Grid Background="Gray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="600"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Grid.Column="1" Background="DimGray">
+            <StackPanel>
+                <Rectangle Height="20"/>
+                <Image Name="image" Source="/OtherImgs/ShitHeadHelpLayoutImage.png" Width="600" Height="350" Panel.ZIndex="2"/>
+                <Rectangle Height="10"/>
+                <TextBlock Text=" Layout" FontSize=" 20"/>
+                <TextBlock Text="1. the card pile, this is where all played cards will apear, topmost = last played" FontSize=" 14"/>
+                <TextBlock Text="2. the draw pile, this is where all cards yet to be drawn are" FontSize=" 14"/>
+                <TextBlock Text="3. the discard pile, this is where all discarded cards will apear" FontSize=" 14"/>
+                <TextBlock Text="4. your hand cards, press any card to select it and then again to deselect it" FontSize=" 14"/>
+                <TextBlock Text="5. your shown cards, the hidden cards are beneath these, functions like the hand cards" FontSize=" 14"/>
+                <TextBlock Text="6. the action buttons, here is the list of available actions to do at your turn" FontSize=" 14"/>
+                <TextBlock Text="7. opponent space, here you can see all you opponents. their hands, shown and hidden cards" FontSize=" 14"/>
+                <TextBlock Text="" FontSize=" 14"/>
+                <TextBlock Text=" Rules" FontSize=" 20"/>
+                <TextBlock Text="the goal of the game is to be the first player to have 0 cards, each turn you can either" FontSize=" 14"/>
+                <TextBlock Text="play one or more cards (conditions apply), pick up the cardpile, or pickup and play the " FontSize=" 14"/>
+                <TextBlock Text="topmost card in the drawpile.Each player has in total 3 piles and must empty each before" FontSize=" 14"/>
+                <TextBlock Text="going to the next one, these are:" FontSize=" 14"/>
+                <TextBlock Text="the hand" FontSize=" 14"/>
+                <TextBlock Text="the shown cards" FontSize=" 14"/>
+                <TextBlock Text="and the hidden cards" FontSize=" 14"/>
+                <TextBlock Text=" " FontSize=" 14"/>
+                <TextBlock Text="While there are still cards in the drawpile whenever anyone gets below 3 cards in their" FontSize=" 14"/>
+                <TextBlock Text="hand they draw cards (from the drawpile) untill they have 3 cards; this value (3) can" FontSize=" 14"/>
+                <TextBlock Text="be changed in options." FontSize=" 14"/>
+                <TextBlock Text=" " FontSize=" 14"/>
+                <TextBlock Text="Conditions for playing a card" FontSize=" 20"/>
+                <TextBlock Text="to be able to  play a card the cards rank must be higher than the last played card with" FontSize=" 14"/>
+                <TextBlock Text="two exceptions, you can always play a 2 or 10. some plays have special effects as listed" FontSize=" 14"/>
+                <TextBlock Text="below:" FontSize=" 14"/>
+                <TextBlock Text=" - [two]               : lets you play another round (any card)" FontSize=" 14"/>
+                <TextBlock Text=" - [ten]               : lets you play another round (any card) and discards cardpile" FontSize=" 14"/>
+                <TextBlock Text=" - [four of a kind]    : lets you play another round (any card) and discards cardpile" FontSize=" 14"/>
+                <TextBlock Text=" " FontSize=" 14"/>
+                <TextBlock Text="there are some other possible card combinations that you can play like pairs, three of" FontSize=" 14"/>
+                <TextBlock Text="a kind, and straights. Keep in mind that the lowest card will have to be higher than " FontSize=" 14"/>
+                <TextBlock Text="the last played card for the play to be allowed. 2s and 10s will lose their special " FontSize=" 14"/>
+                <TextBlock Text="effect if played with multiple other cards aswell." FontSize=" 14"/>
+                <TextBlock Text="" FontSize=" 14"/>
+                <TextBlock Text="sometimes all you cards are lower than the last played card, in these cases you might" FontSize=" 14"/>
+                <TextBlock Text="have to pick up the cardpile, it will be added to your hand." FontSize=" 14"/>
+                <TextBlock Text="" FontSize=" 14"/>
+                <TextBlock Text="the 'take a gander' button draws and plays the topmost card in the drawpile, if this card" FontSize=" 14"/>
+                <TextBlock Text="is lower than the last played card you will have to pick up the card pile, but hey worth" FontSize=" 14"/>
+                <TextBlock Text="a shot right! if its higher the next opponent might be the one needing to pick up the pile." FontSize=" 14"/>
+                <TextBlock Text=" " FontSize=" 14"/>
+                <TextBlock Text=" Other Information" FontSize=" 20"/>
+                <TextBlock Text="In the begining of the game before any cards have been played, the 'swap cards' button" FontSize=" 14"/>
+                <TextBlock Text="is active (as well as the shown cards preemtivly), this allows you to swap any number" FontSize=" 14"/>
+                <TextBlock Text="of cards in your hand with those in your shown cards section. the swap will only occur when" FontSize=" 14"/>
+                <TextBlock Text="exactly one card from each list is selected and the 'swap cards' button is pressed." FontSize=" 14"/>
+                <TextBlock Text="(a little advice might be wise to prepare for later on)" FontSize=" 14"/>
+                <TextBlock Text="" FontSize=" 14"/>
+                <TextBlock Text="at the end of the game, the last list of cards the 'hidden cards' are all face down, you" FontSize=" 14"/>
+                <TextBlock Text="will have to play one blindly! if the card is lower (/ or not a 10 or 2) it will cause " FontSize=" 14"/>
+                <TextBlock Text="you to pick up the card pile. Once all these cards are gone the game will be over and " FontSize=" 14"/>
+                <TextBlock Text="(with the exception of ↓) you will have won (:" FontSize=" 14"/>
+                <TextBlock Text="" FontSize=" 14"/>
+                <TextBlock Text="(if your last card is a 2 or a 10 you will automatically lose xd)" FontSize=" 14"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

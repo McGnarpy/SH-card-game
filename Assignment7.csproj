@@ -1,0 +1,138 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <UseWPF>true</UseWPF>
+	  <generateGenerateAppxPackageOnBuild>gnene</generateGenerateAppxPackageOnBuild>  <generateeWPF/>
+
+    <ApplicationIcon>CardImgs\JOKER.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CardImgs\ACE-CLUBS.png" />
+    <None Remove="CardImgs\ACE-DIMONDS.png" />
+    <None Remove="CardImgs\ACE-HEARTS.png" />
+    <None Remove="CardImgs\ACE-SPADES.png" />
+    <None Remove="CardImgs\BACKSIDE.png" />
+    <None Remove="CardImgs\EIGHT-CLUBS.png" />
+    <None Remove="CardImgs\EIGHT-DIMONDS.png" />
+    <None Remove="CardImgs\EIGHT-HEARTS.png" />
+    <None Remove="CardImgs\EIGHT-SPADES.png" />
+    <None Remove="CardImgs\FIVE-CLUBS.png" />
+    <None Remove="CardImgs\FIVE-DIMONDS.png" />
+    <None Remove="CardImgs\FIVE-HEARTS.png" />
+    <None Remove="CardImgs\FIVE-SPADES.png" />
+    <None Remove="CardImgs\FOUR-CLUBS.png" />
+    <None Remove="CardImgs\FOUR-DIMONDS.png" />
+    <None Remove="CardImgs\FOUR-HEARTS.png" />
+    <None Remove="CardImgs\FOUR-SPADES.png" />
+    <None Remove="CardImgs\JACK-CLUBS.png" />
+    <None Remove="CardImgs\JACK-DIMONDS.png" />
+    <None Remove="CardImgs\JACK-HEARTS.png" />
+    <None Remove="CardImgs\JACK-SPADES.png" />
+    <None Remove="CardImgs\JOKER.png" />
+    <None Remove="CardImgs\KING-CLUBS.png" />
+    <None Remove="CardImgs\KING-DIMONDS.png" />
+    <None Remove="CardImgs\KING-HEARTS.png" />
+    <None Remove="CardImgs\KING-SPADES.png" />
+    <None Remove="CardImgs\NINE-CLUBS.png" />
+    <None Remove="CardImgs\NINE-DIMONDS.png" />
+    <None Remove="CardImgs\NINE-HEARTS.png" />
+    <None Remove="CardImgs\NINE-SPADES.png" />
+    <None Remove="CardImgs\QUEEN-CLUBS.png" />
+    <None Remove="CardImgs\QUEEN-DIMONDS.png" />
+    <None Remove="CardImgs\QUEEN-HEARTS.png" />
+    <None Remove="CardImgs\QUEEN-SPADES.png" />
+    <None Remove="CardImgs\SEVEN-CLUBS.png" />
+    <None Remove="CardImgs\SEVEN-DIMONDS.png" />
+    <None Remove="CardImgs\SEVEN-HEARTS.png" />
+    <None Remove="CardImgs\SEVEN-SPADES.png" />
+    <None Remove="CardImgs\SIX-CLUBS.png" />
+    <None Remove="CardImgs\SIX-DIMONDS.png" />
+    <None Remove="CardImgs\SIX-HEARTS.png" />
+    <None Remove="CardImgs\SIX-SPADES.png" />
+    <None Remove="CardImgs\TEN-CLUBS.png" />
+    <None Remove="CardImgs\TEN-DIMONDS.png" />
+    <None Remove="CardImgs\TEN-HEARTS.png" />
+    <None Remove="CardImgs\TEN-SPADES.png" />
+    <None Remove="CardImgs\THREE-CLUBS.png" />
+    <None Remove="CardImgs\THREE-DIMONDS.png" />
+    <None Remove="CardImgs\THREE-HEARTS.png" />
+    <None Remove="CardImgs\THREE-SPADES.png" />
+    <None Remove="CardImgs\TWO-CLUBS.png" />
+    <None Remove="CardImgs\TWO-DIMONDS.png" />
+    <None Remove="CardImgs\TWO-HEARTS.png" />
+    <None Remove="CardImgs\TWO-SPADES.png" />
+    <None Remove="CardImgs\UNKNOWN.png" />
+    <None Remove="OtherImgs\ShitHeadHelpLayoutImage.png" />
+    <None Remove="OtherImgs\ShitHeadLogo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CardImgs\JOKER.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="CardImgs\ACE-CLUBS.png" />
+    <Resource Include="CardImgs\ACE-DIMONDS.png" />
+    <Resource Include="CardImgs\ACE-HEARTS.png" />
+    <Resource Include="CardImgs\ACE-SPADES.png" />
+    <Resource Include="CardImgs\BACKSIDE.png" />
+    <Resource Include="CardImgs\EIGHT-CLUBS.png" />
+    <Resource Include="CardImgs\EIGHT-DIMONDS.png" />
+    <Resource Include="CardImgs\EIGHT-HEARTS.png" />
+    <Resource Include="CardImgs\EIGHT-SPADES.png" />
+    <Resource Include="CardImgs\FIVE-CLUBS.png" />
+    <Resource Include="CardImgs\FIVE-DIMONDS.png" />
+    <Resource Include="CardImgs\FIVE-HEARTS.png" />
+    <Resource Include="CardImgs\FIVE-SPADES.png" />
+    <Resource Include="CardImgs\FOUR-CLUBS.png" />
+    <Resource Include="CardImgs\FOUR-DIMONDS.png" />
+    <Resource Include="CardImgs\FOUR-HEARTS.png" />
+    <Resource Include="CardImgs\FOUR-SPADES.png" />
+    <Resource Include="CardImgs\JACK-CLUBS.png" />
+    <Resource Include="CardImgs\JACK-DIMONDS.png" />
+    <Resource Include="CardImgs\JACK-HEARTS.png" />
+    <Resource Include="CardImgs\JACK-SPADES.png" />
+    <Resource Include="CardImgs\JOKER.png" />
+    <Resource Include="CardImgs\KING-CLUBS.png" />
+    <Resource Include="CardImgs\KING-DIMONDS.png" />
+    <Resource Include="CardImgs\KING-HEARTS.png" />
+    <Resource Include="CardImgs\KING-SPADES.png" />
+    <Resource Include="CardImgs\NINE-CLUBS.png" />
+    <Resource Include="CardImgs\NINE-DIMONDS.png" />
+    <Resource Include="CardImgs\NINE-HEARTS.png" />
+    <Resource Include="CardImgs\NINE-SPADES.png" />
+    <Resource Include="CardImgs\QUEEN-CLUBS.png" />
+    <Resource Include="CardImgs\QUEEN-DIMONDS.png" />
+    <Resource Include="CardImgs\QUEEN-HEARTS.png" />
+    <Resource Include="CardImgs\QUEEN-SPADES.png" />
+    <Resource Include="CardImgs\SEVEN-CLUBS.png" />
+    <Resource Include="CardImgs\SEVEN-DIMONDS.png" />
+    <Resource Include="CardImgs\SEVEN-HEARTS.png" />
+    <Resource Include="CardImgs\SEVEN-SPADES.png" />
+    <Resource Include="CardImgs\SIX-CLUBS.png" />
+    <Resource Include="CardImgs\SIX-DIMONDS.png" />
+    <Resource Include="CardImgs\SIX-HEARTS.png" />
+    <Resource Include="CardImgs\SIX-SPADES.png" />
+    <Resource Include="CardImgs\TEN-CLUBS.png" />
+    <Resource Include="CardImgs\TEN-DIMONDS.png" />
+    <Resource Include="CardImgs\TEN-HEARTS.png" />
+    <Resource Include="CardImgs\TEN-SPADES.png" />
+    <Resource Include="CardImgs\THREE-CLUBS.png" />
+    <Resource Include="CardImgs\THREE-DIMONDS.png" />
+    <Resource Include="CardImgs\THREE-HEARTS.png" />
+    <Resource Include="CardImgs\THREE-SPADES.png" />
+    <Resource Include="CardImgs\TWO-CLUBS.png" />
+    <Resource Include="CardImgs\TWO-DIMONDS.png" />
+    <Resource Include="CardImgs\TWO-HEARTS.png" />
+    <Resource Include="CardImgs\TWO-SPADES.png" />
+    <Resource Include="CardImgs\UNKNOWN.png" />
+    <Resource Include="OtherImgs\ShitHeadHelpLayoutImage.png" />
+    <Resource Include="OtherImgs\ShitHeadLogo.png" />
+  </ItemGroup>
+
+</Project>

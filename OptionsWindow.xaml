@@ -1,0 +1,50 @@
+﻿<Window x:Class="Assignment7.OptionsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment7"
+        mc:Ignorable="d"
+        Title="Options" Height="450" Width="800">
+    <Grid Background="DarkGreen">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        
+        
+        <ScrollViewer Grid.Column="1" VerticalScrollBarVisibility="Auto">
+        <StackPanel Name="OptionsPanel" Orientation="Vertical" HorizontalAlignment="Center" Background="Green" Panel.ZIndex="2">
+                <Label Name="lblOptions" Height="50" Content="options" HorizontalAlignment="Center" FontSize="30" FontWeight="ExtraBold"/>
+                <Label Name="lblOpponentOption" Content="Number of opponents" FontWeight="DemiBold"/>
+            <StackPanel Name="rbtnOpponents" Orientation="Horizontal" Width="400" Margin="0">
+                <RadioButton Name="one" Margin="5" Content="1" IsChecked="True" Click="one_Click"/>
+                <RadioButton Name="two" Margin="5" Content="2" Click="two_Click"/>
+                <RadioButton Name="three" Margin="5" Content="3" Click="three_Click"/>
+            </StackPanel>
+                <Label Name="lblAllSeeingEye" Content="All Seeing Eye" FontWeight="DemiBold" Margin="5"/>
+                <CheckBox Name="ckbxAllSeeingEye" IsChecked="False" Click="ckbxAllSeeingEye_Click"/>
+            
+                <Label Name="lblNumShownCards" Content="Number of shown table cards" FontWeight="DemiBold" Margin="2"/>
+                <Slider Name="sldrShownCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrShownCards_ValueChanged" Interval="1"/>
+            
+                <Label Name="lblNumHidenCards" Content="Number of hiden table cards" FontWeight="DemiBold" Margin="2"/>
+                <Slider Name="sldrHidenCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrHidenCards_ValueChanged" Interval="1"/>
+            
+                <Label Name="lblNumMinHandCards" Content="Minimum number of cards on hand to not draw more from drawpile" FontWeight="DemiBold" Margin="2"/>
+                <Slider Name="sldrHandCards" Minimum="1" Maximum="7" Width="360" Value="3" ValueChanged="sldrHandCards_ValueChanged" Interval="1"/>
+
+                <Label Name="lblSeed" Content="Seed" FontWeight="DemiBold"/>
+                <TextBox Name="txbSeed" Width="200" HorizontalAlignment="Left" TextChanged="txbSeed_TextChanged"/>
+            
+                <Rectangle Height="50"/>
+                <Button Name="btnSave" Content="Save" Width="100" Height="50" Background="Gray" Click="btnSave_Click"/>
+                <Button Name="btnReset" Content="reset to default" Width="100" Height="50" Background="Gray" Click="btnReset_Click" Margin="20"/>
+
+
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
